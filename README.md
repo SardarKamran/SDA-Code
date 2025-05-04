@@ -1,4 +1,5 @@
 Purpose:
+
 This Java program allows you to view the fee payment history of a student by entering their Student ID. It connects to a MySQL database and fetches the payment details.
 
 Prerequisites:
