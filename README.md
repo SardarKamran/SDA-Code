@@ -3,6 +3,7 @@ Purpose:
 This Java program allows you to view the fee payment history of a student by entering their Student ID. It connects to a MySQL database and fetches the payment details.
 
 Prerequisites:
+
 Before running this code, make sure you have the following installed and set up:
 
 Java JDK 8 or later.
@@ -11,9 +12,11 @@ Java JDK 8 or later.
 . Any Java IDE (IntelliJ, Eclipse, NetBeans) or command-line tools.
 
 Database Setup:
+
 1) Open MySQL Workbench or MySQL CLI, then create the database and table:
 
 CREATE DATABASE fee_management;
+
 USE fee_management;
 
 CREATE TABLE payments (
@@ -31,6 +34,7 @@ INSERT INTO payments (student_id, amount_paid, payment_date) VALUES
 (2, 6000, '2024-02-20');
 
 Configuration in Code:
+
 Check and update these details in the code if needed:
 
 private static final String DB_URL = "jdbc:mysql://localhost:3306/fee_management";
@@ -39,13 +43,16 @@ private static final String DB_PASSWORD = "";
 Replace root and password with your MySQL credentials.
 
 How to Run the Code:
+
 Option 1: Using Command Line
 . Save the code as ViewPaymentHistory.java.
 . Open terminal or command prompt.
 . Navigate to the directory where your file is located.
 . Compile the program:
+
 javac -cp .;mysql-connector-java-8.0.xx.jar ViewPaymentHistory.java
 . Run the program:
+
 java -cp .;mysql-connector-java-8.0.xx.jar ViewPaymentHistory
 Replace mysql-connector-java-8.0.xx.jar with the exact name of your JDBC driver.
 
@@ -56,6 +63,7 @@ Option 2: Using an IDE
 . Run the main method.
 
 Using the Program:
+
 After running, the console will prompt:
 
 === View Payment History ===
