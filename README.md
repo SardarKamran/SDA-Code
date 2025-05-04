@@ -45,12 +45,15 @@ Replace root and password with your MySQL credentials.
 How to Run the Code:
 
 Option 1: Using Command Line
-. Save the code as ViewPaymentHistory.java.
+
+. Save the code as ViewPaymentHistory.java
 . Open terminal or command prompt.
 . Navigate to the directory where your file is located.
+
 . Compile the program:
 
 javac -cp .;mysql-connector-java-8.0.xx.jar ViewPaymentHistory.java
+
 . Run the program:
 
 java -cp .;mysql-connector-java-8.0.xx.jar ViewPaymentHistory
